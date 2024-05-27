@@ -10,25 +10,28 @@ import SearchPage from './Components/SearchPage'
 
 const App = () => {
   return (
-      <div style={{position: "relative"}}>
-        <Router>
-          <Routes>
-            <Route path='/' element={
+    <div style={{ position: "relative" }}>
+      <Router basename="/">
+        <Routes>
+          <Route
+            path="/"
+            element={
               <>
                 <Header />
                 <Home />
                 <Popular />
                 <Footer />
               </>
-            } />
-            <Route path='/signup' element={<SignUp />} />
-            <Route path='/profile' element={<Profile />} />
-            <Route path='/search' element={<SearchPage/>} />
-            <Route path='*' element={<h1>no page like that</h1>} />
-          </Routes>
-        </Router>
-      </div>
-  )
+            }
+          />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="*" element={<h1>no page like that</h1>} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
 export default App
