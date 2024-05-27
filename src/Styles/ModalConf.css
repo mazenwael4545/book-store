@@ -1,0 +1,19 @@
+.modalBackground{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(86, 86, 86, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 5px;
+}
